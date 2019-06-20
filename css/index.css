@@ -252,8 +252,19 @@ img {
 .home header h2 {
   margin-top: 20px;
 }
+@media (max-width: 500px) {
+  .home header h2 {
+    margin-left: 23px;
+    margin-top: 18px;
+  }
+}
 .home header p {
   margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home header p {
+    margin-left: 23px;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -261,20 +272,47 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 98%;
+    margin-left: 23px;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    margin-left: 23px;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 94%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -288,6 +326,13 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 94%;
+    margin-left: 23px;
+    margin-bottom: 26px;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -297,9 +342,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+    margin-left: 72px;
+  }
 }
 .home .content-pick .destination .btn button {
   background-color: #17A2B8;
