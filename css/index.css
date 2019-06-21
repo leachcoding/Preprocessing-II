@@ -225,7 +225,12 @@ img {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background-color: #FFEBCD;
+}
+@media (max-width: 500px) {
+  .footer {
+    margin-left: 10px;
+  }
 }
 .footer p {
   text-align: center;
@@ -353,7 +358,7 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 75%;
+    width: 80%;
     margin-left: 72px;
   }
 }
@@ -362,6 +367,49 @@ img {
   width: 82%;
   height: 45px;
   border-radius: 15px;
+  color: #FFFFFF;
+  font-size: 1.73rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn button {
+    width: 93%;
+  }
+}
+.home .vacation-package {
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .home .vacation-package {
+    margin-left: 23px;
+  }
+}
+.home .vacation-package form {
+  text-align: center;
+}
+.home .vacation-package form input {
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .vacation-package form input {
+    text-align: center;
+    font-size: 1.45rem;
+  }
+}
+.home .vacation-package form textarea {
+  width: 50%;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .vacation-package form textarea {
+    text-align: center;
+    font-size: 1.45rem;
+  }
+}
+.home .vacation-package form input[type="submit"] {
+  background-color: #17A2B8;
   color: #FFFFFF;
   font-size: 1.73rem;
 }

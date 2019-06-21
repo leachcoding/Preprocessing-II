@@ -106,17 +106,55 @@
       width: 30%;
       margin-bottom: 30px;
       @media @mobile {
-        width: 98%;
+        width: 80%;
         margin-left: 72px;
       }
       .btn {
         button {
-          .button-mixin(@button-bg, 82%, 45px, 15px, @main-bg, 1.73rem)
+          .button-mixin(@button-bg, 82%, 45px, 15px, @main-bg, 1.73rem);
           @media @mobile {
-            .button-mixin(@button-bg, 95%, 45px, 15px, @main-bg, 1.8rem)
+            width: 93%;
           }
         }
       }
     }
   }
+
+// STRETCH GOAL FORM SECTION
+  .vacation-package {
+    text-align: center;
+    margin-bottom: 20px;
+    @media @mobile {
+      margin-left: 23px;
+    }
+    form {
+      text-align: center;
+      input {
+        width: 50%;
+        height: 30px;
+        border-radius: 10px;
+        @media @mobile {
+          text-align: center;
+          font-size: 1.45rem;
+        }
+      }
+      textarea {
+        width: 50%;
+        border-radius: 10px;
+        @media @mobile {
+          text-align: center;
+          font-size: 1.45rem;
+        }
+      }
+      input[type="submit"] {
+        background-color: @button-bg;
+        color: @main-bg;
+        font-size: 1.73rem;
+      }
+    }
+  }
+
+
+
+
 }// home
