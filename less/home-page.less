@@ -1,61 +1,160 @@
 .home {
 
+// IMG / WELCOME SECTION
+  header {
+    border-top: .15rem dashed @navigation-border;
+    border-bottom: .15rem dashed @navigation-border;
+    @media @mobile {
+      margin-top: -5px;
+    }
+    img {
+      @media @mobile {
+        width: 450px;
+        height: 135px;
+        margin-left: 25px;
+      }
+    }
+    h2 {
+      margin-top: 20px;
+      @media @mobile {
+        margin-left: 23px;
+        margin-top: 18px;
+      }
+    }
+    p {
+      margin-bottom: 10px;
+      @media @mobile {
+        margin-left: 23px;
+      }
+    }
+  }
+
+// LETS GO SECTION
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
+    @media @mobile {
+      flex-direction: column;
+    }
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 98%;
+        margin-left: 23px;
+      }
     }
-
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile {
+        width: 100%;
+        margin-left: 23px;
+      }
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 94%;
+        }
       }
     }
   }
 
+// ADVENTURE AWAITS
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
     }
-
     .img-content {
       padding-right: 1%;
       padding-left: 0;
     }
   }
 
+// PICK DESTINATION SECTION
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      width: 94%;
+      margin-left: 23px;
+      margin-bottom: 26px;
+    }
     img {
       border-radius: 10px;
     }
   }
 
+// FUN / MOUNTAIN / ISLAND SECTION
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile {
+      flex-direction: column;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+        margin-left: 72px;
+      }
+      .btn {
+        button {
+          .button-mixin(@button-bg, 82%, 45px, 15px, @main-bg, 1.73rem);
+          @media @mobile {
+            width: 93%;
+          }
+        }
+      }
     }
   }
+
+// STRETCH GOAL FORM SECTION
+  .vacation-package {
+    text-align: center;
+    margin-bottom: 20px;
+    @media @mobile {
+      margin-left: 23px;
+    }
+    form {
+      text-align: center;
+      input {
+        width: 50%;
+        height: 30px;
+        border-radius: 10px;
+        @media @mobile {
+          text-align: center;
+          font-size: 1.45rem;
+        }
+      }
+      textarea {
+        width: 50%;
+        border-radius: 10px;
+        @media @mobile {
+          text-align: center;
+          font-size: 1.45rem;
+        }
+      }
+      input[type="submit"] {
+        background-color: @button-bg;
+        color: @main-bg;
+        font-size: 1.73rem;
+      }
+    }
+  }
+
+
+
+
 }// home
